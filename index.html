@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/pencil.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+    <title>Survey Form FCC</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 id="title">Formulário de pesquisa</h1>
+        <p id="description">
+          Exemplo de formulário de pesquisa ou cadastro.
+        </p>
+        <div class="title-underline"></div>
+      </header>
+      <form id="survey-form">
+        <div class="half-box spacing">
+          <label for="name" class="form-label" id="name-label">Nome*</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-input"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+
+        <div class="half-box">
+          <label for="last-name" class="form-label">Sobrenome*</label>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            class="form-input"
+            placeholder="Digite seu sobrenome"
+            required
+          />
+        </div>
+
+        <div class="half-box spacing">
+          <label for="password">Senha*</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha" required/>
+        </div>
+
+        <div class="half-box spacing">
+          <label for="password">Confirmação da senha*</label>
+          <input type="password" name="passconfirmation" id="password" placeholder="Digite sua senha" required/>
+        </div>
+
+        <div class="full-box">
+          <label for="email" class="form-label" id="email-label">Email*</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-input"
+            placeholder="Digite seu email"
+            required
+          />
+        </div>
+        <div class="full-box">
+          <label for="number" class="form-label" id="number-label"
+            >Idade*</label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form-input"
+            placeholder="Digite sua idade"
+            min="10"
+            max="120"
+          />
+        </div>
+        <small class="form-alert">*Campos obrigatórios</small>
+
+        <div class="full-box">
+          <label for="number" class="dropdown-label"
+            >Você tem animal de estimação?</label
+          >
+          <select name="pets" class="pets" id="dropdown">
+            <option value="" selected></option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="passaro">Pássaro</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+
+        <div class="check full-box">
+          <p>Gosta de Tecnologia?</p>
+
+          <label for="yes" class="label-check">
+            <input
+              type="radio"
+              name="choice"
+              id="yes"
+              class="input-radio"
+              value="Sim"
+            />
+            Sim</label
+          >
+
+          <label for="no" class="label-check"
+            ><input
+              type="radio"
+              name="choice"
+              id="no"
+              value="Não"
+              class="input-radio"
+            />
+            Não</label
+          >
+
+          <label for="not-sure" class="label-check"
+            ><input
+              type="radio"
+              name="choice"
+              id="not-sure"
+              class="input-radio"
+              value="Não sei"
+            />
+            Não sei</label
+          >
+        </div>
+
+        <div class="check full-box">
+          <p>Qual sua linguagem de programação favorita?</p>
+
+          <label for="no" class="label-check"
+            ><input
+              type="checkbox"
+              name="language"
+              id="html"
+              value="HTML"
+              class="input-checkbox"
+            />
+            HTML</label
+          >
+
+          <label for="css" class="label-check"
+            ><input
+              type="checkbox"
+              name="language"
+              id="css"
+              value="CSS"
+              class="input-checkbox"
+            />
+            CSS</label
+          >
+
+          <label for="javascript" class="label-check"
+            ><input
+              type="checkbox"
+              name="language"
+              id="javascript"
+              value="JavaScript"
+              class="input-checkbox"
+            />
+            JavaScript</label
+          >
+        </div>
+
+        <div class="full-box">
+          <label for="text-area" class="form-label"
+            >Sugetões, dúvidas ou algum comentário?</label
+          >
+          <textarea
+            name="text-area"
+            class="form-textarea"
+            placeholder="Digite aqui..."
+            id="textarea"
+          ></textarea>
+        </div>
+
+        <div class="full-box">
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            value="terms"
+          />
+          <label for="agreement" id="agreement-label">
+            Eu li e aceito os <a href="#">termos de uso</a>
+          </label>
+        </div>
+
+        <div class="full-box">
+          <input type="submit" value="Enviar" id="submit" class="btn" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
